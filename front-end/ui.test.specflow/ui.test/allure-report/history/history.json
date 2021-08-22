@@ -1,0 +1,97 @@
+{
+  "Tento autenticar no sistema com credenciais bloqueadas" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "94006aa4e12b8336",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629660214050,
+        "stop" : 1629660216151,
+        "duration" : 2101
+      }
+    } ]
+  },
+  "Realizar uma compra com sucesso702215117" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "62e47469d536ce2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629660206191,
+        "stop" : 1629660208727,
+        "duration" : 2536
+      }
+    } ]
+  },
+  "Realizar uma compra com sucesso-1043664748" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6cfae303e8160723",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629660200147,
+        "stop" : 1629660206147,
+        "duration" : 6000
+      }
+    } ]
+  },
+  "Autentico no sistema com credenciais válidas" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5c26de48d078d326",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629660210767,
+        "stop" : 1629660213991,
+        "duration" : 3224
+      }
+    } ]
+  },
+  "Acesso o site e verifico que estou na loginpage" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "897e18721c8c6f58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1629660208817,
+        "stop" : 1629660210723,
+        "duration" : 1906
+      }
+    } ]
+  }
+}

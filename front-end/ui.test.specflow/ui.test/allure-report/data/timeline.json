@@ -1,0 +1,78 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "NB-004930",
+    "children" : [ {
+      "name" : "NonParallelWorker",
+      "children" : [ {
+        "name" : "Autentico no sistema com credenciais válidas",
+        "uid" : "5c26de48d078d326",
+        "parentUid" : "ec90f6700f5eb77619dc95eb4b76e610",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629660210767,
+          "stop" : 1629660213991,
+          "duration" : 3224
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Realizar uma compra com sucesso",
+        "uid" : "62e47469d536ce2e",
+        "parentUid" : "ec90f6700f5eb77619dc95eb4b76e610",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629660206191,
+          "stop" : 1629660208727,
+          "duration" : 2536
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Sauce Labs Onesie" ]
+      }, {
+        "name" : "Realizar uma compra com sucesso",
+        "uid" : "6cfae303e8160723",
+        "parentUid" : "ec90f6700f5eb77619dc95eb4b76e610",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629660200147,
+          "stop" : 1629660206147,
+          "duration" : 6000
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Sauce Labs Backpack" ]
+      }, {
+        "name" : "Tento autenticar no sistema com credenciais bloqueadas",
+        "uid" : "94006aa4e12b8336",
+        "parentUid" : "ec90f6700f5eb77619dc95eb4b76e610",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629660214050,
+          "stop" : 1629660216151,
+          "duration" : 2101
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Acesso o site e verifico que estou na loginpage",
+        "uid" : "897e18721c8c6f58",
+        "parentUid" : "ec90f6700f5eb77619dc95eb4b76e610",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629660208817,
+          "stop" : 1629660210723,
+          "duration" : 1906
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ec90f6700f5eb77619dc95eb4b76e610"
+    } ],
+    "uid" : "4662166a2acbf15e07676ca4807e447c"
+  } ],
+  "name" : "timeline"
+}

@@ -1,0 +1,231 @@
+{
+  "uid" : "62e47469d536ce2e",
+  "name" : "Realizar uma compra com sucesso",
+  "fullName" : "Realizar uma compra com sucesso",
+  "historyId" : "Realizar uma compra com sucesso702215117",
+  "time" : {
+    "start" : 1629660206191,
+    "stop" : 1629660208727,
+    "duration" : 2536
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado  que acesso o site",
+      "time" : {
+        "start" : 1629660206191,
+        "stop" : 1629660208069,
+        "duration" : 1878
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Quando  informo as seguintes credenciais",
+      "time" : {
+        "start" : 1629660208070,
+        "stop" : 1629660208201,
+        "duration" : 131
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "68859ac992569b9c",
+        "name" : "table",
+        "source" : "68859ac992569b9c.csv",
+        "type" : "text/csv",
+        "size" : 47
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "E  me autentico no sistema",
+      "time" : {
+        "start" : 1629660208201,
+        "stop" : 1629660208270,
+        "duration" : 69
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "E  adiciono o produto Sauce Labs Onesie",
+      "time" : {
+        "start" : 1629660208270,
+        "stop" : 1629660208353,
+        "duration" : 83
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "E  visualizo o carrinho",
+      "time" : {
+        "start" : 1629660208353,
+        "stop" : 1629660208392,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "E  sigo para as informações do Checkout",
+      "time" : {
+        "start" : 1629660208392,
+        "stop" : 1629660208437,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "E  insiro os dados pessoais",
+      "time" : {
+        "start" : 1629660208437,
+        "stop" : 1629660208616,
+        "duration" : 179
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4f10b507f6fc6399",
+        "name" : "table",
+        "source" : "4f10b507f6fc6399.csv",
+        "type" : "text/csv",
+        "size" : 58
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "E  sigo para o Overview do Checkout",
+      "time" : {
+        "start" : 1629660208616,
+        "stop" : 1629660208669,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "E  finalizo a compra",
+      "time" : {
+        "start" : 1629660208669,
+        "stop" : 1629660208705,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Entao  a página de pedido completo é exibida contendo a mensagem THANK YOU FOR YOUR ORDER",
+      "time" : {
+        "start" : 1629660208705,
+        "stop" : 1629660208727,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 10,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "AfterScenario [10000]",
+    "time" : {
+      "start" : 1629660208727,
+      "stop" : 1629660208765,
+      "duration" : 38
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "NonParallelWorker"
+  }, {
+    "name" : "host",
+    "value" : "NB-004930"
+  }, {
+    "name" : "feature",
+    "value" : "Checkout"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "produto",
+    "value" : "Sauce Labs Onesie"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "62e47469d536ce2e.json",
+  "parameterValues" : [ "Sauce Labs Onesie" ]
+}

@@ -1,0 +1,70 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "Realizar uma compra com sucesso",
+    "uid" : "6cfae303e8160723",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1629660200147,
+      "stop" : 1629660206147,
+      "duration" : 6000
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Sauce Labs Backpack" ]
+  }, {
+    "name" : "Realizar uma compra com sucesso",
+    "uid" : "62e47469d536ce2e",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1629660206191,
+      "stop" : 1629660208727,
+      "duration" : 2536
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Sauce Labs Onesie" ]
+  }, {
+    "name" : "Acesso o site e verifico que estou na loginpage",
+    "uid" : "897e18721c8c6f58",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1629660208817,
+      "stop" : 1629660210723,
+      "duration" : 1906
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Autentico no sistema com credenciais válidas",
+    "uid" : "5c26de48d078d326",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1629660210767,
+      "stop" : 1629660213991,
+      "duration" : 3224
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Tento autenticar no sistema com credenciais bloqueadas",
+    "uid" : "94006aa4e12b8336",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1629660214050,
+      "stop" : 1629660216151,
+      "duration" : 2101
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "packages"
+}

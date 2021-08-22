@@ -1,0 +1,231 @@
+{
+  "uid" : "6cfae303e8160723",
+  "name" : "Realizar uma compra com sucesso",
+  "fullName" : "Realizar uma compra com sucesso",
+  "historyId" : "Realizar uma compra com sucesso-1043664748",
+  "time" : {
+    "start" : 1629660200147,
+    "stop" : 1629660206147,
+    "duration" : 6000
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado  que acesso o site",
+      "time" : {
+        "start" : 1629660200201,
+        "stop" : 1629660205368,
+        "duration" : 5167
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Quando  informo as seguintes credenciais",
+      "time" : {
+        "start" : 1629660205376,
+        "stop" : 1629660205580,
+        "duration" : 204
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4398b97ffd90ec6b",
+        "name" : "table",
+        "source" : "4398b97ffd90ec6b.csv",
+        "type" : "text/csv",
+        "size" : 47
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "E  me autentico no sistema",
+      "time" : {
+        "start" : 1629660205580,
+        "stop" : 1629660205667,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "E  adiciono o produto Sauce Labs Backpack",
+      "time" : {
+        "start" : 1629660205667,
+        "stop" : 1629660205752,
+        "duration" : 85
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "E  visualizo o carrinho",
+      "time" : {
+        "start" : 1629660205752,
+        "stop" : 1629660205790,
+        "duration" : 38
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "E  sigo para as informações do Checkout",
+      "time" : {
+        "start" : 1629660205790,
+        "stop" : 1629660205835,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "E  insiro os dados pessoais",
+      "time" : {
+        "start" : 1629660205835,
+        "stop" : 1629660206013,
+        "duration" : 178
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fe3520df6bdb9f96",
+        "name" : "table",
+        "source" : "fe3520df6bdb9f96.csv",
+        "type" : "text/csv",
+        "size" : 58
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "E  sigo para o Overview do Checkout",
+      "time" : {
+        "start" : 1629660206013,
+        "stop" : 1629660206064,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "E  finalizo a compra",
+      "time" : {
+        "start" : 1629660206064,
+        "stop" : 1629660206106,
+        "duration" : 42
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Entao  a página de pedido completo é exibida contendo a mensagem THANK YOU FOR YOUR ORDER",
+      "time" : {
+        "start" : 1629660206106,
+        "stop" : 1629660206144,
+        "duration" : 38
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 10,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "AfterScenario [10000]",
+    "time" : {
+      "start" : 1629660206148,
+      "stop" : 1629660206184,
+      "duration" : 36
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "NonParallelWorker"
+  }, {
+    "name" : "host",
+    "value" : "NB-004930"
+  }, {
+    "name" : "feature",
+    "value" : "Checkout"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "produto",
+    "value" : "Sauce Labs Backpack"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6cfae303e8160723.json",
+  "parameterValues" : [ "Sauce Labs Backpack" ]
+}

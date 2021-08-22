@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Aug 22 16:23:20 BRT 2021","Sun Aug 22 16:23:26 BRT 2021","6000","","","","","","Realizar uma compra com sucesso",""
+"passed","Sun Aug 22 16:23:28 BRT 2021","Sun Aug 22 16:23:30 BRT 2021","1906","","","","","","Acesso o site e verifico que estou na loginpage",""
+"passed","Sun Aug 22 16:23:34 BRT 2021","Sun Aug 22 16:23:36 BRT 2021","2101","","","","","","Tento autenticar no sistema com credenciais bloqueadas",""
+"passed","Sun Aug 22 16:23:26 BRT 2021","Sun Aug 22 16:23:28 BRT 2021","2536","","","","","","Realizar uma compra com sucesso",""
+"passed","Sun Aug 22 16:23:30 BRT 2021","Sun Aug 22 16:23:33 BRT 2021","3224","","","","","","Autentico no sistema com credenciais válidas",""

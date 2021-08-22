@@ -16,5 +16,7 @@ namespace ui.test.Pages
         public bool IsMenuWindowVisible => MenuWindow.Displayed;
 
         public bool IsMenuLnkVisible => MenuLogoutLnk.Displayed;
+
+        public void SelectProduto(string produto) => driver.FindElement(By.XPath($"//*[text()=\"{produto}\"]")).Click();
     }
 }

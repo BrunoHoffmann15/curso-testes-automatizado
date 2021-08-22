@@ -1,0 +1,51 @@
+[ {
+  "uid" : "6cfae303e8160723",
+  "name" : "Realizar uma compra com sucesso",
+  "time" : {
+    "start" : 1629660200147,
+    "stop" : 1629660206147,
+    "duration" : 6000
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "897e18721c8c6f58",
+  "name" : "Acesso o site e verifico que estou na loginpage",
+  "time" : {
+    "start" : 1629660208817,
+    "stop" : 1629660210723,
+    "duration" : 1906
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "94006aa4e12b8336",
+  "name" : "Tento autenticar no sistema com credenciais bloqueadas",
+  "time" : {
+    "start" : 1629660214050,
+    "stop" : 1629660216151,
+    "duration" : 2101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "62e47469d536ce2e",
+  "name" : "Realizar uma compra com sucesso",
+  "time" : {
+    "start" : 1629660206191,
+    "stop" : 1629660208727,
+    "duration" : 2536
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5c26de48d078d326",
+  "name" : "Autentico no sistema com credenciais válidas",
+  "time" : {
+    "start" : 1629660210767,
+    "stop" : 1629660213991,
+    "duration" : 3224
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
