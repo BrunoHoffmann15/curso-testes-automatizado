@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+  postgres.database:
+    environment:
+      - POSTGRES_USER=teste.automatizado
+      - POSTGRES_PASSWORD=treinamento123
+      - POSTGRES_DB=employee
+    ports:
+      - 5432:5432
+      - 5440:5432
+  
+  pgadmin:
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "teste.automatizado@cwi.com.br"
+      PGADMIN_DEFAULT_PASSWORD: "treinamento123"
+    ports:
+      - 16543:80
+
+  clientwebapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - 8080:80
+
+  liquibase: 
+    command: --changeLogFile=changelog-master.xml --url="jdbc:postgresql://postgresdb:5432/employee" --username="teste.automatizado" --password="treinamento123"  update

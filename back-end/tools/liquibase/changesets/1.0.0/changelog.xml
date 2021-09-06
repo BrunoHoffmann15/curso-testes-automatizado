@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+						http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+	<changeSet id="20210603-2005" author="treinamento-automatizado">
+		<comment>Database initial state</comment>
+		<sqlFile path="00-Start_Database.sql" relativeToChangelogFile="true"/>
+		<rollback>
+			<sqlFile path="00-Start_Database.rollback.sql" relativeToChangelogFile="true"/>
+		</rollback>
+	</changeSet>
+	
+	<changeSet id="20210609-1205" author="treinamento-automatizado">
+		<comment>Create Company table</comment>
+		<sqlFile path="01-CreateTable_Company.sql" relativeToChangelogFile="true"/>
+		<rollback>
+			<sqlFile path="01-CreateTable_Company.rollback.sql" relativeToChangelogFile="true"/>
+		</rollback>
+	</changeSet>
+	
+	<changeSet id="20210609-1210" author="treinamento-automatizado">
+		<comment>Create Employee table</comment>
+		<sqlFile path="02-CreateTable_Employee.sql" relativeToChangelogFile="true"/>
+		<rollback>
+			<sqlFile path="02-CreateTable_Employee.rollback.sql" relativeToChangelogFile="true"/>
+		</rollback>
+	</changeSet>
+	
+	<changeSet id="20210609-1215" author="treinamento-automatizado">
+		<comment>Create EmployeeCompany table</comment>
+		<sqlFile path="03-CreateTable_EmployeeCompany.sql" relativeToChangelogFile="true"/>
+		<rollback>
+			<sqlFile path="03-CreateTable_EmployeeCompany.rollback.sql" relativeToChangelogFile="true"/>
+		</rollback>
+	</changeSet>
+	
+	<changeSet id="20210603-2000" author="treinamento-automatizado">
+		<tagDatabase tag="1.0.0"/>
+	</changeSet>
+</databaseChangeLog>

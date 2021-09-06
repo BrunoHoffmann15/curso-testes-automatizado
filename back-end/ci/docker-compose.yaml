@@ -1,0 +1,61 @@
+version: '3.9'
+
+volumes: 
+  postgres-data:
+    name: postgres-volume
+  pgadmin:
+    name: pgadmin-volume
+
+networks:
+  database-network:
+    name: database-network
+    driver: bridge
+
+services:
+  postgres.database:
+    image: postgres:latest
+    container_name: postgresdb
+    restart: always
+    volumes:
+      - ../tools/postgres:/var/lib/postgresql/data
+    networks:
+      - database-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    volumes:
+      - ../tools/pgadmin:/var/lib/pgadmin
+    depends_on:
+      - postgres.database
+    networks:
+      - database-network
+
+  clientwebapi:
+    image: clientwebapi
+    container_name: clientwebapi
+    build:  
+      context: ../src
+      dockerfile: ./Cwi.Treinamento.TesteAutomatizado.WebApi/Dockerfile
+    networks:
+      - database-network
+    depends_on:
+      - postgres.database
+
+  liquibase:
+    image: liquibase/liquibase
+    container_name: postgresliquibase
+    volumes:
+      - ../tools/liquibase:/liquibase/changelog
+    networks:
+      - database-network
+    depends_on: 
+      postgres.database:
+        condition: service_healthy
+
+    

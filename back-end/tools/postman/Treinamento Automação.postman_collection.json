@@ -1,0 +1,534 @@
+{
+	"info": {
+		"_postman_id": "56a6f7a5-beb2-48fb-bf85-3a4e35bbe9a6",
+		"name": "Treinamento Automação",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "POST - Create Employee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"teste\",\r\n  \"email\": \"teste@teste.com.br\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{DefaultTreinamentoApiUrl}}/v1/employees",
+							"host": [
+								"{{DefaultTreinamentoApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Employee by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{BearerToken}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{DefaultTreinamentoApiUrl}}/v1/employees/2",
+							"host": [
+								"{{DefaultTreinamentoApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"employees",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Employees Paged",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{DefaultTreinamentoApiUrl}}/v1/employees/paged?Filter.Limit=1&Filter.Page=1",
+							"host": [
+								"{{DefaultTreinamentoApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"employees",
+								"paged"
+							],
+							"query": [
+								{
+									"key": "Filter.Limit",
+									"value": "1"
+								},
+								{
+									"key": "Filter.Page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Employees",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{DefaultTreinamentoApiUrl}}/v1/employees",
+							"host": [
+								"{{DefaultTreinamentoApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT - Edit Employee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"teste\",\r\n  \"email\": \"teste@teste.com.br\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{DefaultTreinamentoApiUrl}}/v1/employees/2",
+							"host": [
+								"{{DefaultTreinamentoApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"employees",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE - Delete Employee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{DefaultTreinamentoApiUrl}}/v1/employees/1",
+							"host": [
+								"{{DefaultTreinamentoApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "POST - Create Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"company\",\r\n  \"code\": \"000002\",\r\n  \"maxEmployeesNumber\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{DefaultTreinamentoApiUrl}}/v1/companies",
+							"host": [
+								"{{DefaultTreinamentoApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Company by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{DefaultTreinamentoApiUrl}}/v1/companies/1",
+							"host": [
+								"{{DefaultTreinamentoApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"companies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Companies Paged",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{DefaultTreinamentoApiUrl}}/v1/companies/paged?Filter.Limit=3&Filter.Page=1",
+							"host": [
+								"{{DefaultTreinamentoApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"companies",
+								"paged"
+							],
+							"query": [
+								{
+									"key": "Filter.Limit",
+									"value": "3"
+								},
+								{
+									"key": "Filter.Page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Companies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{DefaultTreinamentoApiUrl}}/v1/companies",
+							"host": [
+								"{{DefaultTreinamentoApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT - Edit Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"company\",\r\n  \"code\": \"000001\",\r\n  \"maxEmployeesNumber\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{DefaultTreinamentoApiUrl}}/v1/Companies/1",
+							"host": [
+								"{{DefaultTreinamentoApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"Companies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE - Delete Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{DefaultTreinamentoApiUrl}}/v1/companies/2",
+							"host": [
+								"{{DefaultTreinamentoApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"companies",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Hire Employee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{DefaultTreinamentoApiUrl}}/v1/companies/1/hire/2",
+							"host": [
+								"{{DefaultTreinamentoApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"companies",
+								"1",
+								"hire",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Fire Employee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{DefaultTreinamentoApiUrl}}/v1/companies/1/fire/2",
+							"host": [
+								"{{DefaultTreinamentoApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"companies",
+								"1",
+								"fire",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST - Auth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);\r",
+							"pm.environment.set(\"BearerToken\", jsonData.accessToken);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"teste.automatizado\",\r\n  \"password\": \"treinamento123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{DefaultTreinamentoApiUrl}}/v1/public/auth",
+					"host": [
+						"{{DefaultTreinamentoApiUrl}}"
+					],
+					"path": [
+						"v1",
+						"public",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
