@@ -1,4 +1,4 @@
-﻿Funcionalidade: Cadastro de funcionário
+Funcionalidade: Cadastro de funcionário
 	Sendo um usuário com as devidas permissão
 	Quero poder cadastrar um novo funcionário
 
