@@ -27,7 +27,7 @@ namespace Cwi.Treinamento.TesteAutomatizado.Tests.Steps.Common
 
         [Then(@"o registro estará disponível na tabela '(.*)' da base de dados")]
         public async Task EntaoORegistroEstaraDisponivelNaTabelaDaBaseDeDados(string tableName, Table table)
-        {
+       {
             var currenteItens = await _postgreDatabaseController.SelectFrom(tableName, table);
 
             Assert.NotZero(currenteItens.Count(), $"Não foram encontrados registros na tabela {tableName}.");
