@@ -50,6 +50,42 @@ namespace Cwi.Treinamento.TesteAutomatizado.Tests.Controllers
             await _connection.ExecuteAsync(query);
         }
 
+        public async Task InsertIntoTable(string tableName, Table table) 
+        {
+            var insertColumns = string.Join(",", GetColumns(table));
+            var insertValues = string.Join(",", GetInsertValues(table));
+
+            var query = $"INSERT INTO {tableName} ({insertColumns}) VALUES {insertValues}";
+
+            await _connection.ExecuteAsync(query);
+        }
+
+        private string[] GetColumns(Table table)
+        {
+            return table.Header.ToArray();
+        }
+
+        private string[] GetInsertValues(Table table)
+        {
+            var insertValues = new List<string>();
+
+            for (int row = 0; row < table.RowCount; row++)
+            {
+                var rowValues = new List<string>();
+
+                for (int header = 0; header < table.Header.Count; header++)
+                {
+                    string value = table.Rows[row][header];
+
+                    rowValues.Add($"{value}");
+                }
+
+                insertValues.Add($"({string.Join(",", rowValues)})");
+            }
+
+            return insertValues.ToArray();
+        }
+
         public async Task<IEnumerable<object>> SelectFrom(string tableName, Table table)
         {
             var selectColumns = string.Join(",", GetColumnsForSelect(table));

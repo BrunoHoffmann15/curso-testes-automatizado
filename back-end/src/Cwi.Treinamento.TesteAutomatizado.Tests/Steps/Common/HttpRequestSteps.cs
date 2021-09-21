@@ -1,4 +1,5 @@
 ﻿using Cwi.Treinamento.TesteAutomatizado.Tests.Controllers;
+using Newtonsoft.Json;
 using NUnit.Framework;
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
@@ -36,6 +37,16 @@ namespace Cwi.Treinamento.TesteAutomatizado.Tests.Steps.Common
             Assert.AreEqual(httpStatusCode, (int) _httpRequestController.GetResponseMessageHttpStatusCode());
         }
 
+        [Then(@"o conteúdo retornado será")]
+        public async Task EntaoOConteudoRetornadoSera(string responseExpected)
+        {
+            string jsonResult = await _httpRequestController.GetResponseBodyContent();
+
+            var expectedObject = JsonConvert.DeserializeObject<object>(responseExpected);
+            var resultObject = JsonConvert.DeserializeObject<object>(jsonResult);
+
+            Assert.AreEqual(JsonConvert.SerializeObject(expectedObject), JsonConvert.SerializeObject(resultObject));
+        }
 
     }
 }
